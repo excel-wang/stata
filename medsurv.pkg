@@ -1,0 +1,5 @@
+v 3
+d medsurv - Calculate the median survival time from Cox/Poisson regression
+d Chao Wang, Kingston University
+f medsurv.ado
+f medsurv.sthlp
