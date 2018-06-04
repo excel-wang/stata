@@ -1,0 +1,5 @@
+v 3
+d fscore - Calculate F-score
+d Chao Wang, Kingston University
+f fscore.ado
+f fscore.sthlp
