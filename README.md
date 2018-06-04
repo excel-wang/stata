@@ -13,7 +13,7 @@ net describe medsurv, from(https://raw.githubusercontent.com/excel-wang/stata/ma
 ```stata
 net describe fscore, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
-- fscore: Likelihood-ratio test for each individual covariate after a regression
+- lrtest2: Likelihood-ratio test for each individual covariate after a regression
 ```stata
 net describe lrtest2, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
