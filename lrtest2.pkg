@@ -1,5 +1,5 @@
 v 3
-d lrtest2 - Calculate the median survival time from Cox/Poisson regression
+d lrtest2 - Likelihood-ratio test for each individual covariate after a regression
 d Chao Wang, Kingston University
 f lrtest2.ado
 f lrtest2.sthlp
