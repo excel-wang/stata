@@ -1,8 +1,19 @@
-# Stata package medsurv
-Stata program to calculate median survival time.
+# Stata tools
+Some useful Stata programs developed by the author.
 
 ## Installtion:
 Type the following within Stata and follow the instructions:
+
+- medsurv: Calculate the median survival time from Cox/Poisson regression
 ```stata
-net describe medsurv, from(https://raw.githubusercontent.com/excel-wang/medsurv/master/)
+net describe medsurv, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+```
+
+- fscore: Calculate F-score
+```stata
+net describe fscore, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+```
+- fscore: Likelihood-ratio test for each individual covariate after a regression
+```stata
+net describe lrtest2, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
