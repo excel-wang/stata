@@ -1,3 +1,5 @@
 v 3
 d Chao Wang, Kingston University
 p medsurv
+p fscore
+p lrtest2
