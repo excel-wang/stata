@@ -1,5 +1,5 @@
-*! version 1.0, Chao Wang, 12/09/2017
-* calculates median survival time using Cox/poisson regression
+*! version 1.2, Chao Wang, 09/07/2018
+* calculates median survival time using Cox/Poisson regression
 program medsurv
 
 version 13.1
@@ -18,12 +18,16 @@ poisson _d ibn.interval protect age calcium, exposure(time_exposed) noconstant i
 */
 
 preserve
-quietly drop if `riskset'==.  // those are censored
+quietly drop if `riskset'==.  // some of these are censored
 
 // save the interval-time relationship
 local exposure=substr(e(offset),4,length(e(offset))-4)
 keep `riskset' `exposure' _t
 rename _t medsurv
+label variable medsurv "Median survival time"
+bysort `riskset': egen _max_time_exposed=max(`exposure')
+drop `exposure'
+ren _max_time_exposed `exposure'
 quietly duplicates drop
 quietly save `timeintervals'
 
@@ -47,8 +51,7 @@ quietly foreach i of local ids {
  // predict: this is to save data size
  merge m:1 `riskset' using `timeintervals', update replace nogen
  predict `haz' if `id'==`i'
- gen `hazc'=`haz'*`exposure'
- gen `cumhaz'=sum(`hazc') if `id'==`i'
+ gen `cumhaz'=sum(`haz') if `id'==`i'
  
  gen `surv'=exp(-`cumhaz')
  gen `surv_diff'=0.5-`surv'
@@ -57,7 +60,7 @@ quietly foreach i of local ids {
  sum `surv_diff' if `id'==`i'
  drop if (`surv_diff'>r(min) & `id'==`i') | (`surv_diff'==. & `id'==`i')
  
- drop `haz' `hazc' `cumhaz' `surv' `surv_diff'
+ drop `haz' `cumhaz' `surv' `surv_diff'
 
 } 
 
@@ -92,13 +95,13 @@ merge m:1 interval using ttt.dta
  gen haz=bh*exp(xb)
 */
 
-* create a datset containing the predicted median survival for each patient
+* create a datset containing the predicted median survival for each subject
 keep `id' `riskset'
 quietly merge m:1 `riskset' using `timeintervals',keep(match) nogen
 quietly save `medsurv'
 restore
 
 * now merge median survival into main dataset
-quietly merge m:1 id using `medsurv', nogen
+quietly merge m:1 id using `medsurv', nogen keep(master match)
 
 end
