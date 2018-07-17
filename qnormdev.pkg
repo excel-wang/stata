@@ -1,0 +1,5 @@
+v 3
+d qnormdev - Detrended Normal Q-Q Plot
+d Chao Wang, Kingston University
+f qnormdev.ado
+f qnormdev.sthlp
