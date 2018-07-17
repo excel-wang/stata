@@ -17,3 +17,7 @@ net describe fscore, from(https://raw.githubusercontent.com/excel-wang/stata/mas
 ```stata
 net describe lrtest2, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
+- qnormdev: Detrended Normal Q-Q Plot
+```stata
+net describe qnormdev, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+```
