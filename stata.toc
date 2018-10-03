@@ -4,3 +4,4 @@ p medsurv
 p fscore
 p lrtest2
 p qnormdev
+p geninteract
