@@ -1,0 +1,5 @@
+v 3
+d geninteract - Generate N-way interaction terms
+d Chao Wang, Kingston University
+f geninteract.ado
+f geninteract.sthlp
