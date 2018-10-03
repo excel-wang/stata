@@ -21,3 +21,7 @@ net describe lrtest2, from(https://raw.githubusercontent.com/excel-wang/stata/ma
 ```stata
 net describe qnormdev, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
+- geninteract: Generate N-way interaction terms
+```stata
+net describe geninteract, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+```
