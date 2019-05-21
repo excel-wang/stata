@@ -1,4 +1,4 @@
-*! version 1.2, Chao Wang, 09/07/2018
+*! version 1.3, Chao Wang, 21/05/2019
 * calculates median survival time using Cox/Poisson regression
 program medsurv
 
@@ -102,6 +102,6 @@ quietly save `medsurv'
 restore
 
 * now merge median survival into main dataset
-quietly merge m:1 id using `medsurv', nogen keep(master match)
+quietly merge m:1 `id' using `medsurv', nogen keep(master match)
 
 end
