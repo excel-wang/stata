@@ -1,0 +1,5 @@
+v 3
+d rcstest - A program to test the nonlinearity of variables in a model using restricted cubic spline
+d Chao Wang, Kingston University
+f rcstest.ado
+f rcstest.sthlp
