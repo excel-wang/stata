@@ -5,3 +5,5 @@ p fscore
 p lrtest2
 p qnormdev
 p geninteract
+p rcs
+p rcstest
