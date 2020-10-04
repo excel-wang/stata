@@ -25,3 +25,11 @@ net describe qnormdev, from(https://raw.githubusercontent.com/excel-wang/stata/m
 ```stata
 net describe geninteract, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
+- rcs: A program to convert the mkspline generated variables
+```stata
+net describe rcs, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+```
+- rcstest: A program to test the nonlinearity of variables in a model using restricted cubic spline
+```stata
+net describe rcstest, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+```
