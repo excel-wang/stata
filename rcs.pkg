@@ -1,0 +1,5 @@
+v 3
+d rcs - A program to convert the mkspline generated variables
+d Chao Wang, Kingston University
+f rcs.ado
+f rcs.sthlp
