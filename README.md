@@ -4,7 +4,7 @@ Some useful Stata programs developed by the author. Some of these programs are a
 ## Installtion:
 Type the following within Stata and follow the instructions (replace _commandname_ to the command you would like to install):
 ```stata
-net describe _commandname_, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
+net describe commandname, from(https://raw.githubusercontent.com/excel-wang/stata/master/)
 ```
 - medsurv: Calculate the median survival time from Cox/Poisson regression
 - fscore: Calculate F-score
