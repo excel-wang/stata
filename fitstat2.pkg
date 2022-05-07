@@ -1,0 +1,5 @@
+v 3
+d fitstat2 - Calculates a series of model goodness-of-fit measures
+d Chao Wang, Kingston University
+f fitstat2.ado
+f fitstat2.sthlp
