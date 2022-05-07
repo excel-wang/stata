@@ -1,5 +1,5 @@
 # Stata tools
-Some useful Stata programs developed by the author. Some of these programs are available at SSC. In Stata, type: ssc describe *programname*.
+Some useful Stata programs developed by the author. Some of these programs are available at SSC. In Stata, type: ssc describe *commandname*.
 
 ## Installtion:
 Type the following within Stata and follow the instructions (replace _commandname_ to the command you would like to install):
