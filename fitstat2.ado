@@ -18,7 +18,7 @@ forvalues i = 1/`varnum' {
 	
 	// MAE
 	qui replace `residual'=abs(`depvar'-`var2calc')
-	qui sum `residual', detail
+	qui sum `residual' `if' `in', detail
 	matrix `result'[`i',1]=r(mean)
 	
 	// Median AE
@@ -26,12 +26,12 @@ forvalues i = 1/`varnum' {
 	
 	// RMSE
 	qui replace `residual'=(`depvar'-`var2calc')^2
-	qui sum `residual'	
+	qui sum `residual'	`if' `in'
 	matrix `result'[`i',3]=sqrt(r(mean))
 	
 	// sMAPE
 	qui replace `residual'= 2*abs(`depvar'-`var2calc')/(abs(`depvar')+abs(`var2calc'))*100
-	qui sum `residual'
+	qui sum `residual' `if' `in'
 	matrix `result'[`i',4]=r(mean)
 
 }
