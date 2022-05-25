@@ -1,0 +1,6 @@
+v 3
+d pdi - Calculates the polytomous discrimination index (PDI)
+d Chao Wang, Kingston University
+f pdi.ado
+f pdi_outcome.ado
+f pdi.sthlp
