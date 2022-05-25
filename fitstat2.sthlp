@@ -9,7 +9,7 @@
 
 {title:Syntax}
 
-{pstd}{cmd:completecase} {varlist}
+{pstd}{cmd:fitstat2} {varlist}
 
 {title:Description}
 
