@@ -1,0 +1,5 @@
+v 3
+d orc - Calculates the ordinal c-index (ORC)
+d Chao Wang, Kingston University
+f orc.ado
+f orc.sthlp
