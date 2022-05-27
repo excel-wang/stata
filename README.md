@@ -15,3 +15,4 @@ net describe commandname, from(https://raw.githubusercontent.com/excel-wang/stat
 - rcstest: A program to test the nonlinearity of variables in a model using restricted cubic spline
 - fitstat2: calculates a series of model goodness-of-fit measures, including mean absolute error (MAE), median absolute error (median AE), root mean squared error (RMSE), and symmetric mean absolute percentage error (sMAPE).
 - pdi: calculates the polytomous discrimination index (PDI).
+- orc: calculates the ordinal c-index (ORC).
