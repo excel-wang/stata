@@ -1,0 +1,17 @@
+v 3
+d mfp_mfx. Marginal effects after mfp using f_able.
+d
+d mfp_mfx calculates marginal effects for non-linear models 
+d fitted using the mfp command. 
+d
+d REQUIREMENT: This package requires the user-written 
+d package f_able (findit f_able) to function.
+d
+d Author: Dr Chao Wang
+d Associate Professor in Health & Social Care Statistics
+d Kingston University
+d
+d Distribution-Date: 20260309
+d
+f mfp_mfx.ado
+f mfp_mfx.sthlp
