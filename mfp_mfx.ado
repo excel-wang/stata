@@ -4,6 +4,14 @@ program define mfp_mfx, rclass
     version 14.0 
     
     syntax [, vars(string) *]
+	
+	// Check for f_able dependency
+    capture which f_able
+    if _rc {
+        display as error "The package 'f_able' is required but not installed."
+        display as text "You can install it by typing: {stata ssc install f_able}"
+        exit 198
+    }
     
     // Feature 1: Default to all variables "*" if vars() is not specified
     if "`vars'" == "" {
@@ -75,7 +83,7 @@ program define mfp_mfx, rclass
     
     // Run the model without the mfp prefix, adding o.(`orig_varlist') 
 	preserve
-	keep if e(sample)
+	qui keep if e(sample)
 	local final_varlist = "o." + subinstr("`orig_varlist'", " ", " o.", .)
     `est_cmd' `dep_var' `othervars' `final_varlist' I*__?
     
