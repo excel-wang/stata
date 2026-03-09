@@ -17,3 +17,4 @@ net describe commandname, from(https://raw.githubusercontent.com/excel-wang/stat
 - pdi: calculates the polytomous discrimination index (PDI).
 - orc: calculates the ordinal c-index (ORC).
 - tmle: Targeted maximum likelihood estimation
+- mfp_mfx: Calculate marginal effects post-mfp using f_able
