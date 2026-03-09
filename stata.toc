@@ -7,3 +7,5 @@ p qnormdev
 p geninteract
 p rcs
 p rcstest
+d mfp_mfx: Marginal effects post-mfp
+p mfp_mfx mfp_mfx: Calculate marginal effects post-mfp using f_able
