@@ -11,8 +11,8 @@ d into a single etable output.
 d
 d Distribution-Date: 20260317
 d
-f mvrs_mfx.ado
-f mvrs_mfx.sthlp
-f get_base_vars.ado
-f np_control.ado
-f np_control.sthlp
+f mvrs_mfx/mvrs_mfx.ado
+f mvrs_mfx/mvrs_mfx.sthlp
+f mvrs_mfx/get_base_vars.ado
+f mvrs_mfx/np_control.ado
+f mvrs_mfx/np_control.sthlp
