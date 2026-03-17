@@ -9,3 +9,5 @@ p rcs
 p rcstest
 d mfp_mfx: Marginal effects post-mfp
 p mfp_mfx mfp_mfx: Calculate marginal effects post-mfp using f_able
+d Post-estimation tools for multivariable regression splines
+p mvrs_mfx mvrs_mfx/mvrs_mfx
