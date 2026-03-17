@@ -1,0 +1,18 @@
+v 3
+d mvrs_mfx. Calculate marginal effects after a spline model using mvrs
+d 
+d Author: Dr Chao Wang, Associate Professor in Health & Social Care Statistics
+d         Kingston University
+d
+d This package automates the calculation of marginal effects after fitting 
+d a model with non-linear effects using the mvrs command. It combines 
+d margins for linear variables and npregress for non-linear transformations 
+d into a single etable output.
+d
+d Distribution-Date: 20260317
+d
+f mvrs_mfx.ado
+f mvrs_mfx.sthlp
+f get_base_vars.ado
+f np_control.ado
+f np_control.sthlp
